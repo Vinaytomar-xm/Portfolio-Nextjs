@@ -1,4 +1,7 @@
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import FloatingButtons from "./components/FloatingButtons";
 
 export const metadata = {
   metadataBase: new URL("https://vtomar-portfolio.vercel.app"),
@@ -39,7 +42,12 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+        <FloatingButtons />
+      </body>
     </html>
   );
 }
