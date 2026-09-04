@@ -7,11 +7,11 @@ export const metadata = {
   metadataBase: new URL("https://vtomar-portfolio.vercel.app"),
   title: "Vinay-Portfolio",
   description:
-    "Portfolio of Vinay Singh Tomar, a B.Tech CSE student passionate about frontend and Python development.",
+    "Portfolio of Vinay Singh Tomar, a B.Tech CSE student and a Web Developer.",
   openGraph: {
     title: "Vinay Singh Tomar - Portfolio",
     description:
-      "Portfolio of Vinay Singh Tomar, a B.Tech CSE student passionate about frontend and Python development.",
+      "Portfolio of Vinay Singh Tomar, a B.Tech CSE student and a Web Developer.",
     images: ["/vinay.jpeg"],
     url: "https://vtomar-portfolio.vercel.app/",
     type: "website",
