@@ -16,7 +16,7 @@ export default function AboutPage() {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="about-text">
-            I am a 1st year Computer Science student at Medi-Caps University with a strong interest in
+            I am a Computer Science student at Medi-Caps University with a strong interest in
             web development and software engineering. I enjoy building clean, responsive, and
             user-friendly web applications with a focus on maintainable and scalable code.
           </p>
@@ -43,6 +43,7 @@ export default function AboutPage() {
                 <h4>B.Tech - Computer Science &amp; Engineering</h4>
                 <p>Medi-Caps University</p>
                 <p>2025 - 2029</p>
+                CGPA: <span className="score">9.38</span>
               </TiltCard>
             </StaggerItem>
             <StaggerItem>
