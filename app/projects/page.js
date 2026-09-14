@@ -71,14 +71,17 @@ export default function ProjectsPage() {
             <div className="project-content">
               <h3>GreenHub - Renewable Energy Management</h3>
               <p>
-                Developed a Python-based encryption tool that allows users to
-                securely encrypt and decrypt messages using various algorithms.
+                Buy & Sell Green Energy Directly
+                Connect solar owners, wind farms & biogas plants with consumers & investors directly. No middlemen. No broker fees. 100% green.
               </p>
 
               <div className="project-tech">
-                <span className="tech-badge">Python</span>
-                <span className="tech-badge">Cryptography</span>
-                <span className="tech-badge">Streamlit</span>
+                <span className="tech-badge">MERN Stack</span>
+                <span className="tech-badge">Rest API</span>
+                <span className="tech-badge">Jwt Auth</span>
+                <span className="tech-badge">Vercel</span>
+                <span className="tech-badge">Render</span>
+                <span className="tech-badge">SendGrid</span>
               </div>
 
               <a
@@ -94,7 +97,7 @@ export default function ProjectsPage() {
         </StaggerItem>
 
 
-       {/* AMS */}
+        {/* AMS */}
         <StaggerItem>
           <TiltCard className="project-card">
             <div className="project-image">
@@ -130,7 +133,7 @@ export default function ProjectsPage() {
         </StaggerItem>
 
 
-         {/* AMS */}
+        {/* AMS */}
         <StaggerItem>
           <TiltCard className="project-card">
             <div className="project-image">
