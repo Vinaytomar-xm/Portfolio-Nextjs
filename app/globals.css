@@ -1630,3 +1630,85 @@
          text-align: center;
      }
  }
+
+/* Skill section */
+
+ .skill-items {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 12px;
+ }
+
+ .skill-tag {
+     display: inline-flex;
+     align-items: center;
+     gap: 9px;
+     padding: 10px 15px;
+     border-radius: 12px;
+     border: 1px solid rgba(100, 100, 100, 0.15);
+     background: rgba(255, 255, 255, 0.5);
+
+     font-size: 0.9rem;
+     font-weight: 500;
+
+     transition:
+         transform 0.25s ease,
+         box-shadow 0.25s ease,
+         border-color 0.25s ease;
+ }
+
+ .skill-icon {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.4rem;
+ }
+
+ .skill-tag:hover {
+     transform: translateY(-3px);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+ }
+
+/* =========================
+   CONTACT ICON COLORS
+========================= */
+
+ /* Light Mode*/
+
+.contact-socials svg,
+.contact-row > svg {
+    color: #181717;
+    transition: color 0.3s ease;
+} 
+
+/* LinkedIn - Light Mode */
+.contact-socials a:nth-child(2) svg,
+.contact-row:nth-child(4) > svg {
+    color: #0077B5;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+[data-theme="dark"] .contact-socials svg,
+[data-theme="dark"] .contact-row > svg {
+    color: #ffffff;
+}
+
+
+/* project image section */
+.project-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
