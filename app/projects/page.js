@@ -69,7 +69,7 @@ export default function ProjectsPage() {
             </div>
 
             <div className="project-content">
-              <h3>GreenHub</h3>
+              <h3>GreenHub - Renewable Energy Management</h3>
               <p>
                 Developed a Python-based encryption tool that allows users to
                 securely encrypt and decrypt messages using various algorithms.
@@ -82,7 +82,7 @@ export default function ProjectsPage() {
               </div>
 
               <a
-                href="https://encriptiontool.streamlit.app/"
+                href="https://greenhub-frontend-coral.vercel.app/"
                 className="project-link"
                 target="_blank"
                 rel="noreferrer"
@@ -118,7 +118,7 @@ export default function ProjectsPage() {
               </div>
 
               <a
-                href="https://encriptiontool.streamlit.app/"
+                href="#"
                 className="project-link"
                 target="_blank"
                 rel="noreferrer"
@@ -154,7 +154,7 @@ export default function ProjectsPage() {
               </div>
 
               <a
-                href="https://encriptiontool.streamlit.app/"
+                href="https://job-portal-frontend-peach-beta.vercel.app/"
                 className="project-link"
                 target="_blank"
                 rel="noreferrer"
