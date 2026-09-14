@@ -1,6 +1,9 @@
 import Reveal from "../components/Reveal";
 import TiltCard from "../components/TiltCard";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiMail, FiSmartphone } from "react-icons/fi";
 
+ 
 export const metadata = {
   title: "Contact — Vinay Tomar",
 };
@@ -29,7 +32,9 @@ export default function ContactPage() {
                 rel="noreferrer"
                 aria-label="GitHub"
               >
-                💻
+               
+              <FaGithub />
+
               </a>
               <a
                 href="https://linkedin.com/in/vinay-singh-tomar-5b65b9377"
@@ -37,10 +42,14 @@ export default function ContactPage() {
                 rel="noreferrer"
                 aria-label="LinkedIn"
               >
-                🔗
+                
+                <FaLinkedin  />
+                
               </a>
               <a href="mailto:Tomarvinaysingh70@gmail.com" aria-label="Email">
-                📧
+
+                <FiMail />
+              
               </a>
             </div>
           </Reveal>
@@ -53,7 +62,8 @@ export default function ContactPage() {
                 rel="noreferrer"
                 className="contact-row"
               >
-                <span className="contact-row-icon">📧</span>
+                <FiMail />
+
                 <span className="contact-row-text">
                   <span className="contact-row-label">Email</span>
                   <span className="contact-row-value">[ Email.&#160;protected ]</span>
@@ -61,7 +71,9 @@ export default function ContactPage() {
                 <span className="contact-row-arrow">→</span>
               </a>
               <a className="contact-row" target="_blank" rel="noreferrer">
-                <span className="contact-row-icon">📱</span>
+
+                <FiSmartphone />
+
                 <span className="contact-row-text">
                   <span className="contact-row-label">Mobile</span>
                   <span className="contact-row-value">+91 8236076680</span>
@@ -74,7 +86,7 @@ export default function ContactPage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="contact-row-icon">💻</span>
+                <FaGithub />
                 <span className="contact-row-text">
                   <span className="contact-row-label">GitHub</span>
                   <span className="contact-row-value">@Vinaytomar-xm</span>
@@ -87,7 +99,7 @@ export default function ContactPage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="contact-row-icon">🔗</span>
+                <FaLinkedin />
                 <span className="contact-row-text">
                   <span className="contact-row-label">LinkedIn</span>
                   <span className="contact-row-value">Vinay Singh Tomar</span>
