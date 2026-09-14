@@ -1,5 +1,7 @@
 "use client";
 
+import { IoDocumentTextOutline } from "react-icons/io5";
+import { BiRefresh } from "react-icons/bi";
 import { useRef } from "react";
 
 export default function FloatingButtons() {
@@ -21,7 +23,7 @@ export default function FloatingButtons() {
         aria-label="Download Resume"
         title="Download Resume"
       >
-        📄
+        <IoDocumentTextOutline />
       </a>
 
       <button
@@ -32,7 +34,7 @@ export default function FloatingButtons() {
         title="Refresh Page"
         onClick={handleRefresh}
       >
-        🔄
+        <BiRefresh />
       </button>
     </>
   );
