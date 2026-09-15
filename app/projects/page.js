@@ -28,22 +28,28 @@ export default function ProjectsPage() {
             <div className="project-image">
               <img
                 src="/MyPortfolioThumbnail.png"
-                alt="Personal Portfolio Website"
+                alt="Personal Portfolio"
               />
             </div>
 
             <div className="project-content">
-              <h3>Personal Portfolio Website</h3>
+              <h3>Personal Portfolio</h3>
+
               <p>
-                Designed and deployed a fully responsive portfolio website to
-                showcase my skills, projects, and experience. Features modern
-                UI/UX design with smooth animations and mobile-first approach.
+                A modern, responsive developer portfolio built with Next.js,
+                showcasing my skills, projects, experience and technical journey
+                with interactive UI and smooth animations and transitions.
               </p>
 
               <div className="project-tech">
-                <span className="tech-badge">HTML</span>
-                <span className="tech-badge">CSS</span>
+                <span className="tech-badge">Next.js</span>
+                <span className="tech-badge">React</span>
                 <span className="tech-badge">JavaScript</span>
+                {/* <span className="tech-badge">Tailwind CSS</span> */}
+                <span className="tech-badge">ShadCN UI</span>
+                <span className="tech-badge">Framer Motion</span>
+                <span className="tech-badge">Responsive UI</span>
+                <span className="tech-badge">Vercel</span>
               </div>
 
               <a
@@ -69,19 +75,25 @@ export default function ProjectsPage() {
             </div>
 
             <div className="project-content">
-              <h3>GreenHub - Renewable Energy Management</h3>
+              <h3>GreenHub - Renewable Energy Marketplace</h3>
+
               <p>
-                Buy & Sell Green Energy Directly
-                Connect solar owners, wind farms & biogas plants with consumers & investors directly. No middlemen. No broker fees. 100% green.
+                A renewable energy marketplace that enables direct peer-to-peer
+                trading between energy producers and buyers. Users can buy, sell
+                and manage renewable energy without traditional middlemen.
               </p>
 
               <div className="project-tech">
-                <span className="tech-badge">MERN Stack</span>
-                <span className="tech-badge">Rest API</span>
-                <span className="tech-badge">Jwt Auth</span>
+                <span className="tech-badge">React</span>
+                <span className="tech-badge">Node.js</span>
+                <span className="tech-badge">Express.js</span>
+                <span className="tech-badge">MongoDB</span>
+                <span className="tech-badge">JWT Auth</span>
+                <span className="tech-badge">REST API</span>
+                <span className="tech-badge">Bcrypt</span>
+                <span className="tech-badge">SendGrid</span>
                 <span className="tech-badge">Vercel</span>
                 <span className="tech-badge">Render</span>
-                <span className="tech-badge">SendGrid</span>
               </div>
 
               <a
@@ -103,25 +115,34 @@ export default function ProjectsPage() {
             <div className="project-image">
               <img
                 src="/AmsThumbnail.png"
-                alt="AMS"
+                alt="Attendance Register"
               />
             </div>
 
             <div className="project-content">
-              <h3>Attendence Management System</h3>
+              <h3>Attendance Register - College Management System</h3>
+
               <p>
-                Developed a Python-based encryption tool that allows users to
-                securely encrypt and decrypt messages using various algorithms.
+                A secure MERN-based attendance management system with
+                role-based access for Admin, Teachers and Students.
+                Teachers can mark attendance while students can track
+                their overall and subject-wise attendance.
               </p>
 
               <div className="project-tech">
-                <span className="tech-badge">Python</span>
-                <span className="tech-badge">Cryptography</span>
-                <span className="tech-badge">Streamlit</span>
+                <span className="tech-badge">React</span>
+                <span className="tech-badge">Node.js</span>
+                <span className="tech-badge">Express.js</span>
+                <span className="tech-badge">MongoDB</span>
+                <span className="tech-badge">JWT Auth</span>
+                <span className="tech-badge">REST API</span>
+                <span className="tech-badge">Bcrypt</span>
+                <span className="tech-badge">Vercel</span>
+                <span className="tech-badge">Render</span>
               </div>
 
               <a
-                href="#"
+                href="YOUR_ATTENDANCE_LIVE_URL"
                 className="project-link"
                 target="_blank"
                 rel="noreferrer"
@@ -132,28 +153,34 @@ export default function ProjectsPage() {
           </TiltCard>
         </StaggerItem>
 
-
-        {/* AMS */}
+        {/* Job Portal */}
         <StaggerItem>
           <TiltCard className="project-card">
             <div className="project-image">
               <img
                 src="/JobPortalThumbnail.png"
-                alt="Job Portal"
+                alt="JobPortal"
               />
             </div>
 
             <div className="project-content">
-              <h3>Job Portal</h3>
+              <h3>JobBoard - Full-Stack Job Platform</h3>
+
               <p>
-                Developed a Python-based encryption tool that allows users to
-                securely encrypt and decrypt messages using various algorithms.
+                A full-stack job portal connecting job seekers and companies,
+                with job browsing, applications, application tracking,
+                job posting and automatic email notifications on status updates.
               </p>
 
               <div className="project-tech">
-                <span className="tech-badge">Python</span>
-                <span className="tech-badge">Cryptography</span>
-                <span className="tech-badge">Streamlit</span>
+                <span className="tech-badge">React</span>
+                <span className="tech-badge">Node.js</span>
+                <span className="tech-badge">Express.js</span>
+                <span className="tech-badge">MongoDB</span>
+                <span className="tech-badge">JWT Auth</span>
+                <span className="tech-badge">REST API</span>
+                <span className="tech-badge">Nodemailer</span>
+                <span className="tech-badge">Vercel</span>
               </div>
 
               <a
@@ -169,30 +196,32 @@ export default function ProjectsPage() {
         </StaggerItem>
 
 
-
         {/* FuteeAI */}
         <StaggerItem>
           <TiltCard className="project-card">
             <div className="project-image">
               <img
-                src="/FuteeAiThumbnail.png"
+                src="/FuteeAIThumbnail.png"
                 alt="FuteeAI Chatbot"
               />
             </div>
 
             <div className="project-content">
-              <h3>FuteeAi_chatbot</h3>
+              <h3>FuteeAI - AI Chatbot</h3>
+
               <p>
-                Developed a chatbot application using React for the frontend
-                and integrated it with a Groq API backend. The chatbot provides
-                intelligent responses based on user input.
+                A fast AI chatbot powered by Groq API with multiple AI models,
+                chat history, Markdown rendering and a fully responsive dark UI.
               </p>
 
               <div className="project-tech">
-                <span className="tech-badge">Vite + React</span>
-                <span className="tech-badge">Groq API / REST API</span>
+                <span className="tech-badge">React</span>
+                <span className="tech-badge">Vite</span>
+                <span className="tech-badge">Groq API</span>
+                <span className="tech-badge">Lucide React</span>
                 <span className="tech-badge">JavaScript</span>
-                <span className="tech-badge">HTML/CSS</span>
+                <span className="tech-badge">CSS</span>
+                <span className="tech-badge">Vercel</span>
               </div>
 
               <a
@@ -206,7 +235,6 @@ export default function ProjectsPage() {
             </div>
           </TiltCard>
         </StaggerItem>
-
 
         {/* AI Background Remover */}
         {/* <StaggerItem>

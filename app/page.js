@@ -34,7 +34,7 @@ export default function Home() {
             Hi, I&apos;m <span className="gradient-text">Vinay Singh Tomar</span>
           </h1>
           <p className="hero-subtitle">
-            I am 1st year B.Tech CSE student, passionate about the web development.
+            I am 2nd year B.Tech CSE student, passionate about the web development.
             I build responsive web applications and create efficient, logic-based solutions.
           </p>
           <p className="hero-location">Indore, Madhya Pradesh, India</p>

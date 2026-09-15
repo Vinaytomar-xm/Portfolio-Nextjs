@@ -23,7 +23,7 @@ export default function AboutPage() {
           <p className="about-text">
             I have hands-on experience with HTML, CSS, JavaScript, React, and Tailwind CSS, along with
             backend exposure using Node.js, Express.js, and REST APIs. I also work with Python and C for
-            problem-solving and have experience with MongoDB and SQL databases.
+            problem-solving and have experience with MongoDB database.
           </p>
           <p className="about-text">
             I actively improve my skills through real-world projects, virtual internships, and

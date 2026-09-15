@@ -9,24 +9,65 @@ export const metadata = {
 export default function ExperiencePage() {
   return (
     <>
-      <section className="experience page-section" style={{ paddingTop: "8rem" }}>
+      <section
+        className="experience page-section"
+        style={{ paddingTop: "8rem" }}
+      >
         <div className="experience-container">
           <Reveal>
             <span className="section-kicker">Career So Far</span>
+
             <h2 className="section-title">
-              Experience &amp; <span className="gradient-text">Achievements</span>
+              Experience &amp;{" "}
+              <span className="gradient-text">Achievements</span>
             </h2>
           </Reveal>
+
           <div className="timeline">
             <Reveal delay={0.1}>
               <div className="timeline-item">
-                <h3>Web Developer</h3>
-                <p className="date">Self Projects • 2025 - Present</p>
+                <h3>Full-Stack Web Developer</h3>
+
+                <p className="date">
+                  Self Projects • 2025 - Present
+                </p>
+
                 <ul>
-                  <li>Built multiple frontend layouts focusing on responsive design principles</li>
-                  <li>Developed Python utilities including Ai_chatbot, Encryption tool &amp; Bg remover</li>
-                  <li>Utilized Git and GitHub for version control and project management</li>
-                  <li>Strengthened problem-solving and logic-building skills through hands-on projects</li>
+                  <li>
+                    Built full-stack web applications using React,
+                    Node.js, Express.js and MongoDB.
+                  </li>
+
+                  <li>
+                    Developed production-style projects including
+                    GreenHub, Attendance Register and JobBoard.
+                  </li>
+
+                  <li>
+                    Implemented REST APIs, JWT authentication,
+                    role-based access control and secure httpOnly
+                    cookie-based authentication.
+                  </li>
+
+                  <li>
+                    Integrated email services using Nodemailer and
+                    SendGrid for application and system notifications.
+                  </li>
+
+                  <li>
+                    Built an AI chatbot using React, Vite and Groq API
+                    with multiple AI models and chat history.
+                  </li>
+
+                  <li>
+                    Worked with Git and GitHub for version control,
+                    project management and deployment workflows.
+                  </li>
+
+                  <li>
+                    Deployed projects using platforms such as Vercel
+                    and Render.
+                  </li>
                 </ul>
               </div>
             </Reveal>
@@ -38,8 +79,12 @@ export default function ExperiencePage() {
         <div className="certifications-container">
           <Reveal>
             <span className="section-kicker">Credentials</span>
-            <h2 className="section-title">Certifications</h2>
+
+            <h2 className="section-title">
+              Certifications
+            </h2>
           </Reveal>
+
           <StaggerGroup className="cert-grid">
             <StaggerItem>
               <TiltCard className="cert-card">
@@ -47,18 +92,14 @@ export default function ExperiencePage() {
                 <p>Cisco Networking Academy</p>
               </TiltCard>
             </StaggerItem>
+
             <StaggerItem>
               <TiltCard className="cert-card">
-                <h4>Technology Job Simulation</h4>
-                <p>Deloitte (via Forage)</p>
+                <h4>Computer Networks</h4>
+                <p>Cisco Networking Academy</p>
               </TiltCard>
             </StaggerItem>
-            <StaggerItem>
-              <TiltCard className="cert-card">
-                <h4>To-Do App with Local Storage</h4>
-                <p>SkillEcted (JSSAV Edu)</p>
-              </TiltCard>
-            </StaggerItem>
+
           </StaggerGroup>
         </div>
       </section>
