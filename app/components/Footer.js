@@ -88,7 +88,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-left">© {currentYear} Built With VINAY SINGH TOMAR </div>
-      <div className="footer-links">
+      {/* <div className="footer-links">
         <a className="footer-link linkedin" href="https://linkedin.com/in/vinay-singh-tomar-5b65b9377" target="_blank"
           rel="noopener noreferrer">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
@@ -105,7 +105,7 @@ export default function Footer() {
           </svg>
           GITHUB
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 }

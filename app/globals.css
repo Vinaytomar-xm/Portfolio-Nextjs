@@ -1545,16 +1545,18 @@
    ============================================ */
  .footer {
      flex-shrink: 0;
-     background: linear-gradient(90deg, #020a12, #061526, #020a12);
-     border-top: 1px solid #0c2236;
+     /* background: linear-gradient(90deg, #020a12, #061526, #020a12); */
+     /* border-top: 1px solid #0c2236; */
      padding: 6px 18px;
      display: flex;
      align-items: center;
-     justify-content: space-between;
-     position: relative;
+     justify-content: center;
+     /* position: relative; */
+     color:#94a3b8;
+     background: transparent;
  }
 
- .footer::before {
+ /* .footer::before {
      content: '';
      position: absolute;
      top: 0;
@@ -1562,15 +1564,16 @@
      right: 0;
      height: 1px;
      background: linear-gradient(90deg, transparent, #00aaff, #ff2040, #00ffe0, transparent);
- }
+ }*/
 
  .footer-left {
      font-family: 'Share Tech Mono', monospace;
      font-size: 9px;
      color: #3e6a88;
      letter-spacing: 1px;
+     justify-content: center;
  }
-
+/*
  .footer-links {
      display: flex;
      align-items: center;
@@ -1604,12 +1607,18 @@
  }
 
  .footer-link.github {
-     color: #e0ebf5;
+     color: #f8fafc;
      border-color: rgba(197, 229, 255, 0.274);
      background: rgba(39, 41, 43, 0.332);
- }
+ } */
 
+ /* 
+ [data-theme="dark"] .footer-link.github {
+     background: #ffffff;
+ } */
+/* 
  .footer-link.github:hover {
+     color: #18191ab6;
      background: rgba(197, 229, 255, .1);
      border-color: rgba(197, 229, 255, .5);
      box-shadow: 0 0 10px rgba(197, 229, 255, .15);
@@ -1629,11 +1638,11 @@
          flex-direction: column;
          text-align: center;
      }
- }
+ } */
 
-/* Skill section */
+ /* Skill section */
 
- .skill-items {
+ /* .skill-items {
      display: flex;
      flex-wrap: wrap;
      gap: 12px;
@@ -1655,9 +1664,9 @@
          transform 0.25s ease,
          box-shadow 0.25s ease,
          border-color 0.25s ease;
- }
+ } */
 
- .skill-icon {
+ /* .skill-icon {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -1667,48 +1676,48 @@
  .skill-tag:hover {
      transform: translateY(-3px);
      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
- }
+ } */
 
-/* =========================
+ /* =========================
    CONTACT ICON COLORS
 ========================= */
 
  /* Light Mode*/
 
-.contact-socials svg,
-.contact-row > svg {
-    color: #181717;
-    transition: color 0.3s ease;
-} 
+ .contact-socials svg,
+ .contact-row>svg {
+     color: #181717;
+     transition: color 0.3s ease;
+ }
 
-/* LinkedIn - Light Mode */
-.contact-socials a:nth-child(2) svg,
-.contact-row:nth-child(4) > svg {
-    color: #0077B5;
-}
+ /* LinkedIn - Light Mode */
+ .contact-socials a:nth-child(2) svg,
+ .contact-row:nth-child(4)>svg {
+     color: #0077B5;
+ }
 
-/* =========================
+ /* =========================
    DARK MODE
 ========================= */
 
-[data-theme="dark"] .contact-socials svg,
-[data-theme="dark"] .contact-row > svg {
-    color: #ffffff;
-}
+ [data-theme="dark"] .contact-socials svg,
+ [data-theme="dark"] .contact-row>svg {
+     color: #ffffff;
+ }
 
 
-/* project image section */
-.project-image {
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
-  border-radius: 16px;
-  margin-bottom: 1.5rem;
-}
+ /* project image section */
+ .project-image {
+     width: 100%;
+     height: 220px;
+     overflow: hidden;
+     border-radius: 16px;
+     margin-bottom: 1.5rem;
+ }
 
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+ .project-image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+ }
