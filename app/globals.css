@@ -1551,8 +1551,8 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     /* position: relative; */
-     color:#94a3b8;
+     position: relative;
+     color: #94a3b8;
      background: transparent;
  }
 
@@ -1564,7 +1564,7 @@
      right: 0;
      height: 1px;
      background: linear-gradient(90deg, transparent, #00aaff, #ff2040, #00ffe0, transparent);
- }*/
+ } */
 
  .footer-left {
      font-family: 'Share Tech Mono', monospace;
@@ -1573,8 +1573,8 @@
      letter-spacing: 1px;
      justify-content: center;
  }
-/*
- .footer-links {
+
+ /* .footer-links {
      display: flex;
      align-items: center;
      gap: 10px;
@@ -1616,7 +1616,7 @@
  [data-theme="dark"] .footer-link.github {
      background: #ffffff;
  } */
-/* 
+ /* 
  .footer-link.github:hover {
      color: #18191ab6;
      background: rgba(197, 229, 255, .1);
@@ -1642,7 +1642,7 @@
 
  /* Skill section */
 
- /* .skill-items {
+ .skill-items {
      display: flex;
      flex-wrap: wrap;
      gap: 12px;
@@ -1664,9 +1664,9 @@
          transform 0.25s ease,
          box-shadow 0.25s ease,
          border-color 0.25s ease;
- } */
+ }
 
- /* .skill-icon {
+ .skill-icon {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -1676,7 +1676,7 @@
  .skill-tag:hover {
      transform: translateY(-3px);
      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
- } */
+ }
 
  /* =========================
    CONTACT ICON COLORS
