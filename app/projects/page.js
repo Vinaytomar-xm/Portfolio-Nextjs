@@ -201,7 +201,7 @@ export default function ProjectsPage() {
           <TiltCard className="project-card">
             <div className="project-image">
               <img
-                src="/FuteeAIThumbnail.png"
+                src="/FuteeAiThumbnail.png"
                 alt="FuteeAI Chatbot"
               />
             </div>
