@@ -4,14 +4,22 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, useScroll } from "framer-motion";
-import {FiMoon, FiSun} from "react-icons/fi";
+import {
+  FiSun,
+  FiMoon,
+  FiInfo,
+  FiBriefcase,
+  FiFolder,
+  FiCode,
+} from "react-icons/fi";
+import { IoMdContact } from "react-icons/io";
 
 const NAV_ITEMS = [
-  { href: "/about", label: "About" },
-  { href: "/skills", label: "Skills" },
-  { href: "/projects", label: "Projects" },
-  { href: "/experience", label: "Experience" },
-  { href: "/contact", label: "Contact" },
+  { href: "/about", icon: <FiInfo />, label: "About" },
+  { href: "/skills", icon: <FiCode />, label: "Skills" },
+  { href: "/projects", icon: <FiFolder />, label: "Projects" },
+  { href: "/experience", icon: <FiBriefcase />, label: "Experience" },
+  { href: "/contact", icon: <IoMdContact />, label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -21,6 +29,7 @@ export default function Navbar() {
   const menuToggleRef = useRef(null);
   const navLinksRef = useRef(null);
   const pathname = usePathname();
+
   const { scrollYProgress } = useScroll();
 
   // Load saved theme on mount
@@ -29,13 +38,15 @@ export default function Navbar() {
     setTheme(savedTheme);
   }, []);
 
-  // Apply theme to <html data-theme="">
+  // Apply theme to <html>
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
+  // Toggle theme
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
+
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
   };
@@ -52,33 +63,65 @@ export default function Navbar() {
         setMenuOpen(false);
       }
     };
+
     document.addEventListener("click", onClickOutside);
-    return () => document.removeEventListener("click", onClickOutside);
+
+    return () => {
+      document.removeEventListener("click", onClickOutside);
+    };
   }, []);
 
-  // Close mobile menu whenever the route changes (page switched)
+  // Close mobile menu when route changes
   useEffect(() => {
     setMenuOpen(false);
   }, [pathname]);
 
   return (
     <>
-      <motion.div className="scroll-progress" style={{ scaleX: scrollYProgress }} />
+      {/* Scroll Progress */}
+      <motion.div
+        className="scroll-progress"
+        style={{ scaleX: scrollYProgress }}
+      />
 
       <nav id="navbar">
+
+        {/* Logo */}
         <Link href="/" className="logo">
           Vinay Tomar
         </Link>
+
         <div className="nav-right">
-          <ul className={`nav-links${menuOpen ? " active" : ""}`} id="navLinks" ref={navLinksRef}>
+
+          {/* Navigation Links */}
+          <ul
+            className={`nav-links${menuOpen ? " active" : ""}`}
+            id="navLinks"
+            ref={navLinksRef}
+          >
             {NAV_ITEMS.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className={pathname === item.href ? "active" : ""}>
-                  {item.label}
+                <Link
+                  href={item.href}
+                  className={
+                    pathname === item.href ? "active" : ""
+                  }
+                >
+                  {/* Icon */}
+                  <span className="nav-icon">
+                    {item.icon}
+                  </span>
+
+                  {/* Label */}
+                  <span className="nav-label">
+                    {item.label}
+                  </span>
                 </Link>
               </li>
             ))}
           </ul>
+
+          {/* Theme Toggle */}
           <button
             className="theme-toggle"
             id="themeToggle"
@@ -86,9 +129,15 @@ export default function Navbar() {
             onClick={toggleTheme}
           >
             <span id="themeIcon">
-              {theme === "light" ? <FiMoon size={22} /> : <FiSun size={22} />}
+              {theme === "light" ? (
+                <FiMoon size={22} />
+              ) : (
+                <FiSun size={22} />
+              )}
             </span>
           </button>
+
+          {/* Mobile Menu Toggle */}
           <button
             className={`menu-toggle${menuOpen ? " active" : ""}`}
             id="menuToggle"
@@ -100,6 +149,7 @@ export default function Navbar() {
             <span></span>
             <span></span>
           </button>
+
         </div>
       </nav>
     </>
