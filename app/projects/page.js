@@ -142,7 +142,7 @@ export default function ProjectsPage() {
               </div>
 
               <a
-                href="YOUR_ATTENDANCE_LIVE_URL"
+                href="https://ams-frontend-rose.vercel.app/"
                 className="project-link"
                 target="_blank"
                 rel="noreferrer"
