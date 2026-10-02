@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 
 // import Link from "next/link";
 
@@ -79,16 +79,16 @@
 //   );
 // }
 
-"use client";
+// "use client";
 
 
-export default function Footer() {
-  const currentYear = new Date().getFullYear();
+// export default function Footer() {
+//   const currentYear = new Date().getFullYear();
 
-  return (
-    <footer className="footer">
-      <div className="footer-left">© {currentYear} Built With VINAY SINGH TOMAR </div>
-      {/* <div className="footer-links">
+//   return (
+//     <footer className="footer">
+//       <div className="footer-left">© {currentYear} Built With VINAY SINGH TOMAR </div>
+{/* <div className="footer-links">
         <a className="footer-link linkedin" href="https://linkedin.com/in/vinay-singh-tomar-5b65b9377" target="_blank"
           rel="noopener noreferrer">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
@@ -106,7 +106,29 @@ export default function Footer() {
           GITHUB
         </a>
       </div> */}
+//     </footer>
+//   );
+// }
+
+
+
+import { usePathname } from "next/navigation";
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  return (
+    <footer className="footer">
+      {/* Spotlight glow - sirf home page par */}
+      {isHome && (
+        <div className="footer-spotlight" aria-hidden="true">
+          <span className="footer-beam beam-left"></span>
+          <span className="footer-beam beam-right"></span>
+        </div>
+      )}
+      <div className="footer-left">© {currentYear} Built With VINAY SINGH TOMAR </div>
     </footer>
   );
 }
-

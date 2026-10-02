@@ -43,9 +43,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Navbar />
         {children}
-        <Footer />
+        <Navbar />
+        {/* <Footer /> */}
         <FloatingButtons />
       </body>
     </html>
