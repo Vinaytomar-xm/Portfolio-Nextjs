@@ -17,8 +17,8 @@ export default function FloatingButtons() {
   return (
     <>
       <a
-        href="/Vinay_resume.pdf"
-        download="Vinay_Resume.pdf"
+        href="/Vinay_Singh_Tomar_Resume.pdf"
+        download="Vinay_Singh_Tomar_Resume.pdf"
         className="resume-btn"
         aria-label="Download Resume"
         title="Download Resume"
