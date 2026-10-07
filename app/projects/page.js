@@ -60,6 +60,16 @@ export default function ProjectsPage() {
               >
                 View Project →
               </a>
+
+              <a
+                href="https://github.com/Vinaytomar-xm/Portfolio-Nextjs"
+                className="project-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source Code →
+              </a>
+
             </div>
           </TiltCard>
         </StaggerItem>
@@ -103,6 +113,16 @@ export default function ProjectsPage() {
                 rel="noreferrer"
               >
                 View Project →
+              </a>
+
+
+              <a
+                href="https://github.com/Vinaytomar-xm/GreenHub-2"
+                className="project-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source Code →
               </a>
             </div>
           </TiltCard>
@@ -149,6 +169,15 @@ export default function ProjectsPage() {
               >
                 View Project →
               </a>
+
+              <a
+                href="https://github.com/Vinaytomar-xm/Attendence-Management-System"
+                className="project-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source Code →
+              </a>
             </div>
           </TiltCard>
         </StaggerItem>
@@ -191,6 +220,15 @@ export default function ProjectsPage() {
               >
                 View Project →
               </a>
+
+              <a
+                href="https://github.com/Vinaytomar-xm/Job_Portal"
+                className="project-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source Code →
+              </a>
             </div>
           </TiltCard>
         </StaggerItem>
@@ -231,6 +269,15 @@ export default function ProjectsPage() {
                 rel="noreferrer"
               >
                 View Project →
+              </a>
+
+              <a
+                href="https://github.com/Vinaytomar-xm/FuteeAi_chatbot"
+                className="project-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source Code →
               </a>
             </div>
           </TiltCard>
